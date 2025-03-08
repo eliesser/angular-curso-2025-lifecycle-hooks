@@ -42,10 +42,10 @@ export class HomePageComponent implements OnInit, OnChanges {
   }
 
   basicEffect = effect((onCleanup) => {
-    log('effect', 'Disparar efectos secundarios');
+    log('effect', 'Triggering side effects');
 
     onCleanup(() => {
-      log('onCleanup', 'Se ejecuta cuando el efecto se va a destruir');
+      log('onCleanup', 'Executed when the bill of exchange is to be destroyed');
     });
   });
 
